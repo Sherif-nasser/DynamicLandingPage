@@ -38,7 +38,6 @@ document.body.insertBefore(nav, currentDiv);
 
 
 
-
 /////////////////////////////////////
 let sections = document.querySelectorAll(".home");
 let link = document.querySelectorAll('.link-test li a'); 

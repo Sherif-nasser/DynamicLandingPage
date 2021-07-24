@@ -14,7 +14,7 @@ body {
 
 .link-test {
     text-align: center;
-    background-color: white;
+    background-color: black;
     display: flex;
     padding: 20px 100px;
     list-style: none;
@@ -25,7 +25,7 @@ body {
 }
 
 .link-test li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 24px;
     font-family: "Poppins", Helvetica, sans-serif;
@@ -38,15 +38,16 @@ body {
 
 .activity {
     height: 50vh;
-    color: #fff;
-    font-size: 25px;
+    max-width: 90%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     transition: 0.5s ease-out;
-    background-color: #900;
+    background-color:	rgba(0, 0, 0, 0.6);
     
 }
-p.activity {
-    border-style: solid;
-    opacity:initial;
+.activity p{
+    /* border-style: solid; */
+    opacity:100% !important;
 }
  .container{
     display: flex;
@@ -63,14 +64,44 @@ p.activity {
   
 }
 
+
+/* the back-ground images for the secions*/
+
+
+
 .container .img-1{
     
-    background-image: url(../../Home-for-a-Growing-Family.jpg);
+    background-image: url(../../images/Home-for-a-Growing-Family.jpg);
     background-color: #cccccc; /* Used if the image is unavailable */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     
 }
+.container .img-2{
+    
+    background-image: url(../../images/night\ moon.jpg);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+}
+.container .img-3{
+    
+    background-image: url(../../images/header.jpg);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+}
+.container .img-4{
+    
+    background-image: url(../../images/weather.jpg);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
+}
+
 #nav-container{
     position: fixed;
     opacity: 100% !important;
@@ -90,7 +121,10 @@ p.activity {
 .home p {
 
 /* border-style: solid; */
-padding-top: 1em;
+padding-top: 1.5em;
+padding-left: 2%;
+padding-right: 2%;
+padding-bottom: 0.5%;
 font-family: "Poppins", Helvetica, sans-serif;
 }
 
@@ -111,8 +145,8 @@ font-family: "Poppins", Helvetica, sans-serif;
     border: none;
     outline: none;
     /* z-index: 99; */
-    background-color: rgb(172, 171, 171);
-    color: black;
+    background-color: rgba(0, 0, 0);
+    color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
@@ -121,5 +155,6 @@ font-family: "Poppins", Helvetica, sans-serif;
 
   #clicked:hover {
     background-color: #555;
+    color: red;
   } 
   

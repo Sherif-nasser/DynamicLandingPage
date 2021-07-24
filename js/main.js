@@ -10,7 +10,7 @@ const ThirdLi = document.createElement('li');
 const ForthLi = document.createElement('li');
 
 //add any nav item name in datalist in HTML sheet it will appear automatically with the new section 
-let navList = []; 
+let navList = [];   
 let itemNames = Array.from(document.getElementsByTagName("datalist")); 
 itemNames.forEach((Name,index)=>{
     let List = itemNames[index];
@@ -22,7 +22,7 @@ const listSections = Array.from(document.getElementsByTagName("section"));
 
 listSections.forEach((section ,index)=>{
     const listItem  = document.createElement('li');
-
+    // console.log(listSections);
     for(let x=0;x<navList.length;x++){
         if(index == x){
     listItem.innerHTML = '<a href="#newItem">'+navList[x]+'</a>';
@@ -35,6 +35,7 @@ listSections.forEach((section ,index)=>{
 nav.append(ul);
 let currentDiv = document.querySelector(".container");
 document.body.insertBefore(nav, currentDiv);
+
 
 
 
@@ -170,10 +171,6 @@ let continues = (function () { // function to fadeIn when scrolling
     
 });
 ///////////////////////////////////
-
-
-
-
 
 
 
